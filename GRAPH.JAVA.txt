@@ -13,9 +13,11 @@ class Graph {
             adj.add(new ArrayList<>());
         }
     }
+
     void addEdge(int u, int v) {
         adj.get(u).add(v);
         adj.get(v).add(u);
+
     }
     void printGraph() {
         for(int i =  0; i < vertices; i++){
@@ -23,9 +25,12 @@ class Graph {
             for(int node : adj.get(i)) {
                 System.out.print(node + " ");
             }
+
             System.out.println();
+
         }
     }
+
     public static void main(String[] args) {
         Graph g = new Graph(5);
         
