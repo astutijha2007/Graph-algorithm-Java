@@ -7,6 +7,7 @@ class Pair {
     Pair(int n, int w) {
         node = n;
         weight = w;
+
     }
 }
 
@@ -38,6 +39,7 @@ public class Main {
             for (Pair neighbor : adj.get(node)) {
                 if (!visited[neighbor.node]) {
                     pq.add(new Pair(neighbor.node, neighbor.weight));
+
                 }
             }
         }
