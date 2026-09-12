@@ -7,6 +7,7 @@ public class Main {
         adj.get(u).add(v);
         adj.get(v).add(u); //for undirected graph
     }
+
     static void bfs(ArrayList<ArrayList<Integer>>adj){
         int v = adj.size();
         boolean visited[] = new boolean[v];
